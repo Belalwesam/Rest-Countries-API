@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.css" />
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Rest Countries API</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-white">
+      <div class="container">
+        <header class="py-4 d-flex justify-content-between align-items-center">
+          <h1>Where in the world?</h1>
+          <div class="dark-mode" id="dark-mode">
+            <i class="far fa-moon mr-1"></i>
+            <span>Dark Mode</span>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="container-fluid dark">
+      <div class="container py-5">
+        <section
+          class="search-section d-flex justify-content-between flex-column flex-md-row mb-5"
+        >
+          <input
+            type="text"
+            name=""
+            id="input"
+            placeholder="Search for a country ..."
+          />
+          <select name="" id="select" class="my-3 my-md-0">
+            <option value="">Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </section>
+        <section class="countries" id="countries">
+          <!-- <div class="country border">
+          <div class="flag">
+            <img
+              src="https://restcountries.eu/data/afg.svg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="country-info py-3 px-4">
+            <h3>Germany</h3>
+            <p>Population: <span>81.770.900</span></p>
+            <p>Region: <span>Europe</span></p>
+            <p>Capital: <span>Berline</span></p>
+          </div>
+        </div>-->
+        </section>
+      </div>
+    </div>
+    <!--Bootstrap CDN-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap compiled javascript-->
+    <script src="./bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
+<!--<div class="row" id="row">
+           < <div class="col-12 col-md-4 px-5 px-md-0 border bor">
+              <img
+                src="https://restcountries.eu/data/deu.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="country-info py-3 px-4">
+                <h3>Germany</h3>
+                <p>Population: <span>81.770.900</span></p>
+                <p>Region: <span>Europe</span></p>
+                <p>Capital: <span>Berline</span></p>
+              </div>
+            </div>-
+<div class="detailes py-5" id="intel">
+   <div class="container" style="max-width: 1350px">
+     <button class="back-btn">
+       <i class="fas fa-long-arrow-alt-left mr-2"></i> Back
+     </button>
+     <div class="row my-5">
+       <div class="col-12 col-md-6 mb-3 mb-md-0">
+         <img
+           src="${country.flag}"
+           alt=""
+           class="img-fluid"
+         />
+       </div>
+       <div class="col-12 col-md-5 offset-md-1 det">
+         <h1 class="my-4 my-md-0">${country.name}</h1>
+         <div
+           class="info d-flex flex-column flex-md-row justify-content-between my-3 my-md-5"
+         >
+           <div class="left my-4 my-md-0">
+             <h5>Native Name :<span>${country.nativeName}</span></h5>
+             <h5>Population : <span>${country.population}</span></h5>
+             <h5>Region : <span>${country.region}</span></h5>
+             <h5>Sub Region : <span>W${country.subregion}</span></h5>
+             <h5>Capital : <span>${country.capital}</span></h5>
+           </div>
+           <div class="right my-4 my-md-0">
+             <h5>Top Level Domain :<span>${country.topLevelDomain}</span></h5>
+             <h5>Currinces :<span>${country.currencies[0].name}</span></h5>
+             <h5>Languges :<span>${country.languages[0].iso639_1}</span></h5>
+           </div>
+         </div>
+         <div
+           class="border-countries d-flex flex-column flex-md-row align-items-md-center justify-content-start"
+         >
+           <h5 class="mr-2 mb-3 mb-md-0">Border Countries :</h5>
+           <div class="btns">
+             <button class="back-btn" id="fix">${country.borders[0]}</button>
+             <button class="back-btn" id="fix">${country.borders[1]}</button>
+             <button class="back-btn" id="fix">${country.borders[2]}</button>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+   -->

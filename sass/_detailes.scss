@@ -1,0 +1,51 @@
+.detailes {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  top: 6.7rem;
+  left: 0;
+  background-color: hsl(0, 0%, 95%);
+  .back-btn {
+    padding: 0.3rem 2rem;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    box-shadow: 2px 2px 3px hsl(0, 0, 75%), -2px 2px 3px hsl(0, 0, 75%),
+      2px -2px 3px hsl(0, 0, 75%), -2px -2px 3px hsl(0, 0, 75%);
+    outline: 0;
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+  .det {
+    h1 {
+      color: hsl(200, 15%, 8%);
+      font-weight: 800;
+    }
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      span {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+#fix {
+  padding: 0.2rem 0.5rem;
+  display: inline;
+  margin-left: 0.5rem;
+}
+@media (max-width: 576px) {
+  #fix {
+    margin: 0;
+    padding: 0.2rem 1rem;
+    margin-right: 0.5rem;
+  }
+}
+.show {
+  display: block;
+}

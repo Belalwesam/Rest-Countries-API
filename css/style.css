@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+header {
+  color: #111517;
+}
+
+header h1 {
+  font-weight: 800;
+}
+
+header .dark-mode {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .dark-mode {
+    font-size: 1.1rem !important;
+  }
+}
+
+.search-section input {
+  padding: 0.4rem 1rem;
+  width: 35%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+}
+
+.search-section select {
+  padding-left: 2rem;
+  padding-right: 5rem;
+  background: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("./32195.svg");
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+}
+
+@media (max-width: 576px) {
+  .search-section input {
+    width: 100%;
+  }
+  .search-section select {
+    max-width: 35%;
+    padding: 0.8rem 1rem;
+  }
+}
+
+.countries {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+}
+
+.country-info {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.country-info h3 {
+  font-weight: 800;
+}
+
+.country-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.country-info p span {
+  font-weight: 300;
+}
+
+.country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 6rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.country::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flag {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .countries {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .country {
+    margin-bottom: 1rem;
+  }
+}
+
+.detailes {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  top: 6.7rem;
+  left: 0;
+  background-color: #f2f2f2;
+}
+
+.detailes .back-btn {
+  padding: 0.3rem 2rem;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  -webkit-box-shadow: 2px 2px 3px #bfbfbf, -2px 2px 3px #bfbfbf, 2px -2px 3px #bfbfbf, -2px -2px 3px #bfbfbf;
+          box-shadow: 2px 2px 3px #bfbfbf, -2px 2px 3px #bfbfbf, 2px -2px 3px #bfbfbf, -2px -2px 3px #bfbfbf;
+  outline: 0;
+}
+
+.detailes .back-btn:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.detailes .det h1 {
+  color: #111517;
+  font-weight: 800;
+}
+
+.detailes .det h5 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.detailes .det h5 span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#fix {
+  padding: 0.2rem 0.5rem;
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  #fix {
+    margin: 0;
+    padding: 0.2rem 1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.show {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  height: 100vh;
+  position: relative;
+}
+
+body.dark-modes * {
+  color: white;
+}
+
+body.dark-modes header,
+body.dark-modes .container-fluid,
+body.dark-modes input[type="text"],
+body.dark-modes select {
+  background-color: #2b3945 !important;
+}
+
+body.dark-modes .dark {
+  background-color: #202c37 !important;
+}
+
+body.dark-modes .country-info {
+  background-color: #2b3945;
+}
+
+body.dark-modes .country {
+  border: 0 !important;
+}
+
+body.dark-modes .detailes {
+  background-color: #202c37 !important;
+}
+
+body.dark-modes .detailes * {
+  color: #ffffff;
+}
+
+body.dark-modes .back-btn {
+  background-color: #202c37 !important;
+  -webkit-box-shadow: 2px 2px 3px #414141, -2px 2px 3px #414141, 2px -2px 3px #414141, -2px -2px 3px #414141;
+          box-shadow: 2px 2px 3px #414141, -2px 2px 3px #414141, 2px -2px 3px #414141, -2px -2px 3px #414141;
+  outline: 0;
+}
+/*# sourceMappingURL=style.css.map */

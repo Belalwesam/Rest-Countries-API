@@ -1,0 +1,38 @@
+.search-section {
+  input {
+    padding: 0.4rem 1rem;
+    width: 35%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+  }
+  select {
+    padding-left: 2rem;
+    padding-right: 5rem;
+    background: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    background-image: url("./32195.svg");
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+  }
+}
+@media (max-width: 576px) {
+  .search-section {
+    input {
+      width: 100%;
+    }
+    select {
+      max-width: 35%;
+      padding: 0.8rem 1rem;
+    }
+  }
+}

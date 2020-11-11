@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import "header";
+@import "search";
+@import "countries";
+@import "detailes";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  position: relative;
+}
+body.dark-modes {
+  * {
+    color: hsl(0, 0%, 100%);
+  }
+  header,
+  .container-fluid,
+  input[type="text"],
+  select {
+    background-color: hsl(209, 23%, 22%) !important;
+  }
+  .dark {
+    background-color: hsl(207, 26%, 17%) !important;
+  }
+  .country-info {
+    background-color: hsl(209, 23%, 22%);
+  }
+  .country {
+    border: 0 !important;
+  }
+  .detailes {
+    background-color: hsl(207, 26%, 17%) !important;
+    * {
+      color: #ffffff;
+    }
+  }
+  .back-btn {
+    background-color: hsl(207, 26%, 17%) !important ;
+    box-shadow: 2px 2px 3px rgb(65, 65, 65), -2px 2px 3px rgb(65, 65, 65),
+      2px -2px 3px rgb(65, 65, 65), -2px -2px 3px rgb(65, 65, 65);
+    outline: 0;
+  }
+}
